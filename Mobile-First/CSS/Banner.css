@@ -1,0 +1,55 @@
+.banner{
+    background: var(--azul);
+    color: var(--branco);
+    text-align: center;
+    padding: 2rem;
+}
+
+.banner_titulo{
+    font-size: 1.2rem;
+    font-weight: 700;
+    padding: 12px;
+}
+
+.banner_texto{
+    font-size: 1.2rem;
+    font-weight: 500;
+    padding: 12px;
+    line-height: 2rem;
+
+}
+
+.banner_placeholder{
+    border-radius: 2rem;
+    padding: 1rem;
+    width: 80vw;
+    text-align: center;
+    background-color: transparent;
+    border: 1px solid var(--branco);
+    color: var(--branco);
+}
+
+.banner_placeholder::placeholder{
+    font-family: var(--fonte-principal);
+    font-weight: 400;
+    font-size: 1.125rem;
+    text-align: center;
+    color: var(--branco);
+    background: url("../IMG/Vector.svg") no-repeat;
+}
+
+
+@media screen and (min-width:1024px){
+    .banner_titulo{
+        font-size: 2rem;
+    }
+
+    .banner_placeholder{
+        width: 50vw;
+    }
+
+    .banner_placeholder::placeholder{
+        background-position:3rem ;
+    }
+}
+
